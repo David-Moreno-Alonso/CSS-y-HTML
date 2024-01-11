@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+header{
+    height: 20%;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(234, 234, 234);
+}
+
+main{
+    display: flex;
+    height: 70%;
+    background-color: rgb(176, 176, 176);
+}
+
+nav{
+    order: -1;
+}
+
+nav, aside{
+    flex: 1 1 150px;
+    padding: 1em;
+}
+
+article{
+    flex: 2 1 300px;
+    background-color: grey;
+    padding: 1em;
+}
+
+article h2, p{
+    margin-top: .5em;
+}

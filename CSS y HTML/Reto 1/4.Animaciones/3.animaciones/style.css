@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 400px;
+  height: 400px;
+  margin: 0px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+#pulse {
+  border-radius: 50%;
+  margin: 100px auto;
+  height: 200px;
+  width: 200px;
+  background-color: green;
+}
+
+#movingSquare {
+  background-color: red;
+  top: 0%;
+  left: 0%;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  animation: mover 3s infinite;
+}
+
+#pulse:hover {
+  animation: pulse 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #3498db;
+    
+  }
+
+  50% {
+    background-color: #e74c3c;
+    transform: scale(1.5,1.5);
+  }
+
+  100% {
+    background-color: #3498db;
+  }
+}
+
+@keyframes mover {
+
+25% {
+    top: 0;
+    left: 98%;
+}
+50% {
+    top: 98%;
+    left: 98%;
+}
+75% {
+    top: 0;
+    left: 0;
+}
+100% {
+    top: 0;
+    left: 0;
+}
+}
+
+

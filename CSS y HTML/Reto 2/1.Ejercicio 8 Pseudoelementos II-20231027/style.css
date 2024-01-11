@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    padding: 0 2rem;
+    background-color: lightgray;
+}
+
+h1 {
+    color: steelblue;
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 1em;
+}
+
+section div,
+h3 {
+    display: flex;
+    align-items: center;
+}
+
+section div {
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}
+
+.ie::before {
+    content: url(ie.png);
+}
+
+.ie::after {
+    content: attr(title);
+    color: red;
+}
+
+.chrome::before {
+    content: url(chrome.png);
+}
+
+.chrome::after {
+    content: attr(title);
+    color: red;
+}
+
+.firefox::before {
+    content: url(firefox.png);
+}
+
+.firefox::after {
+    content: attr(title);
+    color: red;
+}
+
+h3 {
+    margin: 10px;
+}
+
+h3::before,
+h3::after {
+    content: attr(title);
+    background-color: red;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: .2em .3em;
+    margin: 0 2px;
+    font-size: .8em;
+}

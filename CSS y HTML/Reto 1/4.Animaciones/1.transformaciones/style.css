@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 100px auto;
+  width: 80%;
+}
+
+.container img {
+  border: 5px solid black;
+  width: 15%;
+
+}
+
+img.uno {
+  transform: rotate(45deg);
+  transform-origin: top left;
+}
+
+img.dos {
+  transform: rotate(30deg)scale(1.5, 2)translate(3rem,10rem);
+}
+
+img.tres {
+  transform: translate(-2rem,-2rem);
+}
+
+img.cuatro{
+  transform: skew(2rad,1rad);
+}

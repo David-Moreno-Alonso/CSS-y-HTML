@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+div{
+    background-color: rgb(90, 90, 90);
+    color: white;
+    margin: 50px;
+    height: 90px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.diva{
+    box-shadow: -5px -5px 0px 0px black;
+}
+
+.divb{
+    box-shadow: -5px -5px 5px 0px black;
+}
+
+.divc{
+    box-shadow: -5px -5px 0px 5px black;
+}
+
+.divd{
+    box-shadow: -5px -5px 10px 5px black;
+}
+
+.dive{
+    box-shadow: 0px 0px 0px 5px black;
+}
+
+.divf{
+    box-shadow: 0px 0px 10px 10px black;
+}
+
+.divg{
+    box-shadow: -5px -5px 0px 0px black inset;
+}
+
+.divh{
+    box-shadow: 5px 5px 5px 5px black;
+}
+
+.divi{
+    box-shadow: 5px 5px 0px 5px black;
+}
+
+.divj{
+    box-shadow: 5px 5px 0px 5px black;
+}
+
+.divk{
+    box-shadow: 0px 0px 0px 5px black inset;
+}
+
+.divl{
+    box-shadow: 0px 0px 0px 10px black inset;
+}

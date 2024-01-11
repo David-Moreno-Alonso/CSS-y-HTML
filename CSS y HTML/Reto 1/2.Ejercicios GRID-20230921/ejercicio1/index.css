@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    border: 1px solid black;
+    background-color: purple;
+    color: white;
+    text-align: center;
+    font-size: 5em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3 auto);
+    grid-gap: 1em;
+    width: 80%;
+}

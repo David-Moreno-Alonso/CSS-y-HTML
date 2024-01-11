@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: lightgrey;
+}
+
+.types{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.UI{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    color: #4682B4;
+    border-bottom: 1px solid white;
+}
+
+ul, li {
+    list-style: none;
+}
+
+.section{
+    background-color: #DFDFDF;
+    padding: 1em 0;
+}
+
+form{
+    width: 30%;
+}
+
+form input{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border: 2px solid steelblue;
+    padding: .5em;
+}
+
+.texto input{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.texto input[type="text"]{
+    background-color: rgb(234, 234, 234);
+}
+
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: steelblue;
+    margin: 1em;
+    gap: 5px;
+}
+
+.enviar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input[type="submit"]{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+    border: 2px solid white;
+    padding: .5em;
+    color: white;
+}
+
+textarea{
+    width: 100%;    
+    background-color: rgb(234, 234, 234);
+}
+
+.types .nth-of-type div:nth-of-type(n){
+    margin-top: 5px;    
+    border: 1px solid black;
+}
+
+.types .nth-of-type li:nth-of-type(n){
+    margin-top: 5px;    
+    border: 1px solid black;
+}
+
+.nth-of-type div:nth-of-type(2n+1){
+    background-color: orange;
+    color: white;
+    font-size: 2em;
+    padding: .2em;
+}
+
+.nth-of-type li:nth-of-type(2n+1){
+    background-color: blue;
+    color: white;
+    font-size: 2em;
+    padding: .2em;
+}
+
+.nth-of-type strong{
+    color:red;
+    font-size: 28px;
+}
+
+.types li:nth-child(n){
+    margin-top: 5px;   
+    padding: .3em; 
+    color: white;
+    border: 1px solid black;
+}
+
+.nth-child li:nth-child(2n){
+    background-color: red;
+}
+
+.nth-child li:nth-child(2n+1){
+    background-color: green;
+}
+
+form :disabled{
+    cursor: no-drop;
+}
+form input[type="email"]:enabled{
+    background-color: yellow;
+    color: green;
+}
+
