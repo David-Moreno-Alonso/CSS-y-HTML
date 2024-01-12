@@ -12,7 +12,11 @@
   <title>Mountain madness</title>
 
   <style>
-
+    .montes img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+    }
   </style>
 
   <!-- Bootstrap CSS -->
@@ -103,8 +107,8 @@
       </div>
     </div>
     <!-- IMAGENES -->
-    <div class="row text-center m-3">
-      <div class="col-sm-4 my-2">
+    <div class="row text-center m-3 montes">
+      <div class="col-md-4 my-2">
         <img src="img/alpes.jpeg" class="img-fluid rounded-circle" alt="" />
         <h2>Alpes</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis
@@ -113,7 +117,7 @@
           error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
         <a name="" id="" class="btn btn-primary" href="#" role="button">Ver detalles</a>
       </div>
-      <div class="col-sm-4 my-2">
+      <div class="col-md-4 my-2">
         <img src="img/nepal.jpg" class="img-fluid rounded-circle" alt="" />
         <h2>Nepal</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis
@@ -122,7 +126,7 @@
           error sit voluptatem,Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
         <a name="" id="" class="btn btn-primary" href="#" role="button">Ver detalles</a>
       </div>
-      <div class="col-sm-4 my-2">
+      <div class="col-md-4 my-2">
         <img src="img/pirineos.jpg" class="img-fluid rounded-circle" alt="" />
         <h2>Pirineos</h2>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Sed ut perspiciatis unde omnis
@@ -136,7 +140,7 @@
     <div class="row">
       <hr class="featurette-divider">
       <div class="col">
-        <img src="img/guia1.jpg" class="img-thumbnail float-end" alt="" />
+        <img src="img/guia1.jpg" class="img-thumbnail float-end m-2" alt="" />
         <h2>Sobre nosotros</h2>
         <p>Pellentesque habitant morbi tristique
           senectus et
@@ -155,7 +159,7 @@
     <div class="row">
       <hr class="featurette-divider">
       <div class="col">
-        <img src="img/guia2.jpg" class="img-thumbnail float-start" alt="" />
+        <img src="img/guia2.jpg" class="img-thumbnail float-start m-2" alt="" />
         <h2>Sobre nosotros</h2>
         <p>Pellentesque habitant morbi tristique
           senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
@@ -172,7 +176,7 @@
     <div class="row">
       <hr class="featurette-divider">
       <div class="col">
-        <img src="img/guia3.jpg" class="img-thumbnail float-end" alt="" />
+        <img src="img/guia3.jpg" class="img-thumbnail float-end m-2" alt="" />
         <h2>Sobre nosotros</h2>
         <p>Pellentesque habitant morbi tristique
           senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor
@@ -189,9 +193,11 @@
     </div>
     <div class="row">
       <!--Formulario horizontal-->
-      <hr class="featurette-divider">
       <form action="index-Bootstrap.html">
         <div class="row">
+          <div class="col-12">
+            <hr class="featurette-divider">
+          </div>
           <div class="col-lg-6 offset-lg-3">
             <div class="row mb-3">
               <label for="nombre" class="col-lg-6 col-form-label text-lg-right">Nombre</label>
@@ -220,10 +226,10 @@
     </div>
     <!-- FOOTER-->
     <div class="row">
-      <div class="col">
+      <div class="col-12">
         <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </div>
-      <div class="col text-end">
+      <div class="col-12 text-end">
         <p><a href="#">Back to top</a></p>
       </div>
     </div>
