@@ -1,0 +1,35 @@
+@use "sass:map";
+@use "sass:list";
+
+$colores : ("blanco":#fff, "gris oscuro":#333, "morado":rgb(155, 111, 145));
+
+$radius : ("pequeño":0.2rem, "normal":1rem, "grande":2rem);
+
+$bordes : (0.1rem, solid);
+
+.container{
+
+}
+
+nav{
+    background-color: map-get($colores, "morado");
+    padding: 1rem;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+}
+
+nav ul .active{
+    color: map-get($colores, "blanco");
+}
+
+img{
+    border: nth($bordes , 1 ) nth($bordes, 2 )  ;
+    border-radius: map-get($radius, "grande" );
+}
+

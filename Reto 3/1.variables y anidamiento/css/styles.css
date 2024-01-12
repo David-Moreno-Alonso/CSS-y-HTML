@@ -1,0 +1,23 @@
+nav {
+  background-color: rgb(155, 111, 145);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+nav ul .active {
+  color: #fff;
+}
+
+img {
+  border: 0.1rem solid;
+  border-radius: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
