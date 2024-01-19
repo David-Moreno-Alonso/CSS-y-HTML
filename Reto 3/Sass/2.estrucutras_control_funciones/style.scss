@@ -1,0 +1,40 @@
+@use "sass:map";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$botones: (
+    "error": red,
+    "warning": rgb(239, 241, 120),
+    "accepted": rgb(55, 138, 0),
+    "normal": rgb(0, 110, 255)
+);
+
+
+
+.btn-error {
+    background-color: map.get($botones, "error");
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+};
+
+.btn-warning {
+    background-color: map.get($botones, "warning");
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+};
+
+.btn-accepted {
+    background-color: map.get($botones, "accepted");
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+};
+
+.btn-normal {
+    background-color: map.get($botones, "normal");
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+};
