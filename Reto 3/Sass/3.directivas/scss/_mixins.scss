@@ -1,17 +1,14 @@
 // Mixin para dar colores de fondo con gradientes a los botones
 @mixin gradient-x($color-inicial, $color-final) {
-    background-image: linear-gradient(
-        to bottom,
-        $color-inicial 70%,
-        $color-final 100%);
-    }
-      
-    // Mixin para fijar la duracion de una transformacion
-    @mixin duration($num_segundos) {
-        transition: linear #{$num_segundo}s;
-    }
-      
-    // Mixin para establecer en un elemento una animación de un número determinado de vueltas
-    @mixin girar($num_vueltas) {
-        transform: rotate(#{360 * $num_vueltas}deg);
-    }
+    background-image: linear-gradient(to bottom, $color-inicial 70%, $color-final 100%);
+}
+
+// Mixin para fijar la duracion de una transformacion
+@mixin duration($num_segundos) {
+    transition: linear #{$num_segundo}s;
+}
+
+// Mixin para establecer en un elemento una animación de un número determinado de vueltas
+@mixin girar($num_vueltas) {
+    transform: rotate(#{360 * $num_vueltas}deg);
+}
