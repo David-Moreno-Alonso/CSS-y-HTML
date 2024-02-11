@@ -1,0 +1,28 @@
+@use "dimensiones" as *;
+@use "colores" as *;
+@use "mixins";
+
+/*Estilos para figure.card*/
+
+figure.card {
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: 1rem;
+    
+     img {
+        border-radius: $boder-radius-big; 
+        width: 100%;
+        &:hover{
+            @include mixins.duration(0.1);
+            @include mixins.girar(2);
+        }
+     }
+
+     figcaption {
+         font-size: 0.8rem;
+         margin: 0.5rem;
+         text-align: center;
+     }
+
+}

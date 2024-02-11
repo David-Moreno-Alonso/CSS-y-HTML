@@ -1,34 +1,72 @@
 @use "sass:map";
-@use "sass:list";
 
-$colores : ("blanco":#fff, "gris oscuro":#333, "morado":rgb(155, 111, 145));
+//Paleta de colores
+//Colores generales
+$color-background: #FFF;
+$color-base: #333;
 
-$radius : ("pequeño":0.2rem, "normal":1rem, "grande":2rem);
+//Colores barra de menú
+$navbar-background-color: rgb(155, 111, 145);
 
-$bordes : (0.1rem, solid);
+//Colores del borde 
+$border-color: $color-base;
 
-.container{
+/*Estilos para el contenedor general de mi página*/
+$main-container-width: 80%;
 
+.container {
+    width: $main-container-width;
+    margin: 0 auto;
 }
 
-nav{
-    background-color: map-get($colores, "morado");
+//Estilos para los bordes
+$border-width: 0.1rem;
+$border-style: solid;
+
+$border-radius:(
+    "pequeño": 0.2rem,
+    "mediano": 1rem,
+    "grande": 2rem
+);
+
+
+/*Estilos para el nav*/
+//Usando anidamiento crear la hoja de estilos para un menú 
+nav {
+    background-color: $navbar-background-color;
+    padding: 0.2rem;
+    ul {
+        li {
+            display: inline-block;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*Estilos para figure.card*/
+//Estructura de anidamiento para la figura (cards)
+$figure-width: 25%;
+
+figure.card {
+    border: $border-width $border-style $border-color;
+    border-radius: map.get($border-radius,"mediano");
+    display: inline-block;
     padding: 1rem;
-}
+    width: $figure-width;
 
-nav ul{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 20px;
-}
+     img {
+        border-radius: map.get($border-radius,"grande"); 
+        width: 100%;
+     }
 
-nav ul .active{
-    color: map-get($colores, "blanco");
-}
+     figcaption {
+         font-size: 0.8rem;
+         margin: 0.5rem;
+         text-align: center;
+     }
 
-img{
-    border: nth($bordes , 1 ) nth($bordes, 2 )  ;
-    border-radius: map-get($radius, "grande" );
 }

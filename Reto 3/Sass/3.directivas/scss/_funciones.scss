@@ -1,0 +1,16 @@
+@use "colores" as *;
+
+//Función que me devuelve el color de fondo de las columnas dependiendo
+// de si es para o impar
+@function colum-color($col-number) {
+    @if ($col-number%2 == 0) {
+      @return $color-col-pares;
+    } @else {
+      @return $color-col-impares;
+    }
+}
+ 
+//Función que devuelve la anchura correspondiente al elemento
+@function anchura_col($i,$num_elementos) {
+    @return calc(100/$num_elementos)*$i+ "%" ;
+}

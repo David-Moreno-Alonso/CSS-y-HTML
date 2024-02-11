@@ -1,0 +1,36 @@
+@use "dimensiones" as *;
+@use "colores" as *;
+@use "mixins";
+
+//Mapa del que cogeremos los nombres para interpolarlos y los valores de los colores
+$btn-colors: (
+  "error": $color-error,
+  "warning": $color-warning,
+  "accepted": $color-accepted,
+  "normal": $color-normal
+);
+
+//Elemento botón general
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: $border-radius-botones;
+  padding: 0.5rem;
+
+  &:hover {
+    box-shadow: calc($border-radius-botones/2) calc($border-radius-botones/2) $color-shadow;
+  }
+
+  &:active {
+    background-color: orange;
+    color: white;
+  }
+}
+
+//Clase adicional que le da color degradado
+@each $key, $value in $btn-colors {
+  .btn-#{$key} {
+    @include mixins.gradient-x($value,$color-base)
+  }
+}

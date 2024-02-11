@@ -1,0 +1,26 @@
+@use "funciones";
+@use "dimensiones" as *;
+
+.container {
+  width: $main-container-width;
+  margin: 0 auto;
+}
+
+//Sistema de maquetación
+//Padre de cada fila
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.figuras {
+  display: flex;
+}
+//Número de elementos máximos que voy a tener
+$num_elementos: 4;
+
+//Bucle para generar las clases
+@for $i from 1 through $num_elementos {
+  .row > .col-#{$i} {
+    width: #{funciones.anchura_col($i, $num_elementos)};
+  }
+}
