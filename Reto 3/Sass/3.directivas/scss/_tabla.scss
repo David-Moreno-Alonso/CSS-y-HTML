@@ -12,9 +12,9 @@ table {
 
 //Establezco el número máximo de columnas
 $inicio: 1;
-$fin: 5;
+$fin: 4;
 
-@for $num from $inicio to $fin {
+@for $num from $inicio through $fin {
   tbody tr td:nth-child(#{$num}) {
     background-color: funciones.colum-color($num);
   }
