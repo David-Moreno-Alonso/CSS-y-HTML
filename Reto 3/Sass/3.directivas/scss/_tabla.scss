@@ -19,3 +19,9 @@ $fin: 4;
     background-color: funciones.colum-color($num);
   }
 }
+
+@for $i from 1 through 4{
+  tbody tr td:nth-child(#{$i}){
+    background-color: funciones.colum-color($i);
+  }
+}

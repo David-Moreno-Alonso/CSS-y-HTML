@@ -1,6 +1,7 @@
 @use "dimensiones" as *;
 @use "colores" as *;
 @use "mixins";
+@use "sass:map";
 
 //Mapa del que cogeremos los nombres para interpolarlos y los valores de los colores
 $btn-colors: (

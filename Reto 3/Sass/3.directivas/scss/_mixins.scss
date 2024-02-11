@@ -8,7 +8,7 @@
       
     // Mixin para fijar la duracion de una transformacion
     @mixin duration($num_segundos) {
-        transition: linear $num_segundos+s;
+        transition: linear #{$num_segundo}s;
     }
       
     // Mixin para establecer en un elemento una animación de un número determinado de vueltas
