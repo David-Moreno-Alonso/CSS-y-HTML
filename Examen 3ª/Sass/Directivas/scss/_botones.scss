@@ -1,0 +1,37 @@
+@use "dimensiones" as *;
+@use "colores" as *;
+@use "mixins";
+@use "sass:map";
+
+//Mapa para los colores
+$btn-colors: (
+    "error": $color-error,
+    "warning": $color-warning,
+    "accepted": $color-accepted,
+    "normal": $color-normal
+);
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: $border-radius-botones;
+    padding: 0.5rem;
+
+    &:hover {
+        box-shadow: calc($border-radius-botones/2) calc($border-radius-botones/2) $color-shadow;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: orange;
+        color: white;
+    }
+}
+
+@each $k, $v in $btn-colors{
+    .btn-#{$k}{
+        @include mixins.gradient-x($v, $color-base);
+    }
+}

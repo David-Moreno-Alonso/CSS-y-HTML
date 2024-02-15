@@ -11,6 +11,6 @@
 }
  
 //Función que devuelve la anchura correspondiente al elemento
-@function anchura_col($i,$num_elementos) {
-    @return calc(100/$num_elementos)*$i+ "%" ;
+@function anchura-col($i, $num_elementos){
+  @return calc(100/$num_elementos)*$i+"%"
 }

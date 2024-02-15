@@ -1,0 +1,23 @@
+//Paleta de colores
+//Colores generales
+$color-background: #FFFFFF;
+$color-base: #333333;
+
+//Colores barra de menú
+$navbar-background-color: rgb(155, 111, 145);
+$navbar-color-hover: $color-background;
+
+//Colores del borde 
+$border-color: $color-base;
+
+// Sistema de botones
+//Colores de base
+$color-error: #ff0000;
+$color-warning: rgb(239, 241, 120);
+$color-accepted: rgb(55, 138, 0);
+$color-normal: rgb(0, 110, 255);
+$color-shadow: #888;
+
+//Colores para los columnas
+$color-col-pares: #cccccc;
+$color-col-impares: #888888;

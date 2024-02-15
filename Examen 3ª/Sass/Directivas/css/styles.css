@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/*Estilos para el contenedor general de mi página*/
 .container {
   width: 100%;
   margin: 0 auto;
@@ -30,39 +28,14 @@
   width: 100%;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.p-0 {
-  padding: 0rem;
-}
-
-.p-1 {
-  padding: 0.5rem;
-}
-
-.p-2 {
-  padding: 1rem;
-}
-
-.p-3 {
-  padding: 1.5rem;
-}
-
-.p-4 {
-  padding: 2rem;
-}
-
 /*Estilos para el nav*/
 nav {
   background-color: rgb(155, 111, 145);
-  padding: 0.2rem;
+  padding: 0 0.2rem;
 }
 nav ul li {
   display: inline-block;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding: 1rem;
 }
 nav ul li.active {
   color: #FFFFFF;
@@ -76,32 +49,34 @@ nav ul li a:hover {
   color: #FFFFFF;
 }
 
-/*Estilos para figure.card*/
+/*Estilos para las tarjetas*/
 figure.card {
   border: 0.1rem solid #333333;
   border-radius: 1rem;
   display: inline-block;
   padding: 1rem;
+  text-align: center;
 }
 figure.card img {
   border-radius: 2rem;
   width: 100%;
 }
 figure.card img:hover {
-  transition: linear 0.1s;
-  transform: rotate(720deg);
+  transform: rotate(360deg);
+  transition: linear 1s;
 }
 figure.card figcaption {
   font-size: 0.8rem;
   margin: 0.5rem;
-  text-align: center;
 }
 
+/*Estilos para la tabla*/
 table {
   border-collapse: collapse;
   width: 100%;
 }
-table th, table td {
+table th,
+table td {
   border: 1px solid black;
   padding: 1rem;
 }
@@ -124,6 +99,7 @@ tbody tr td:nth-child(4) {
 
 .btn {
   display: inline-block;
+  margin-top: 1rem;
   text-align: center;
   text-decoration: none;
   border-radius: 0.4rem;
@@ -131,6 +107,7 @@ tbody tr td:nth-child(4) {
 }
 .btn:hover {
   box-shadow: 0.2rem 0.2rem #888;
+  cursor: pointer;
 }
 .btn:active {
   background-color: orange;
@@ -138,19 +115,19 @@ tbody tr td:nth-child(4) {
 }
 
 .btn-error {
-  background-image: linear-gradient(to bottom, #ff0000 70%, #333333 100%);
+  background: linear-gradient(to bottom, #ff0000 70%, #333333 100%);
 }
 
 .btn-warning {
-  background-image: linear-gradient(to bottom, rgb(239, 241, 120) 70%, #333333 100%);
+  background: linear-gradient(to bottom, rgb(239, 241, 120) 70%, #333333 100%);
 }
 
 .btn-accepted {
-  background-image: linear-gradient(to bottom, rgb(55, 138, 0) 70%, #333333 100%);
+  background: linear-gradient(to bottom, rgb(55, 138, 0) 70%, #333333 100%);
 }
 
 .btn-normal {
-  background-image: linear-gradient(to bottom, rgb(0, 110, 255) 70%, #333333 100%);
+  background: linear-gradient(to bottom, rgb(0, 110, 255) 70%, #333333 100%);
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

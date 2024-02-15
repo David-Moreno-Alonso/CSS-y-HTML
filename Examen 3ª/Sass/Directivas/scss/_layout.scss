@@ -16,12 +16,11 @@
   display: flex;
 }
 
-//Número de elementos máximos que voy a tener
-$num_elementos: 4;
+$num_elementos:4;
 
 //Bucle para generar las clases
 @for $i from 1 through $num_elementos{
-  .row>.col-#{$i}{
-    width: #{funciones.anchura-col($i, $num_elementos)};
-  }
+    .row>.col-#{$i}{
+        width: #{funciones.anchura-col($i, $num_elementos)};
+      }
 }

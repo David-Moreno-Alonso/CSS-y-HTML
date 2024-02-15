@@ -1,0 +1,28 @@
+@use "dimensiones" as *;
+@use "colores" as *;
+@use "mixins";
+
+
+/*Estilos para las tarjetas*/
+
+figure.card{
+    border: $border-width $border-style $border-color;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+
+    img{
+        border-radius: $border-radius-big;
+        width: $img-width;
+        &:hover{
+            @include mixins.girar(1);
+            @include mixins.duracion(1);
+        }
+    }
+
+    figcaption{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+}

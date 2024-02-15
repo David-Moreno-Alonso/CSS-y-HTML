@@ -1,0 +1,18 @@
+@use "funciones";
+
+/*Estilos para la tabla*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    th,
+    td {
+        border: 1px solid black;
+        padding: 1rem;
+    }
+}
+
+@for $i from 1 through 4 {
+    tbody tr td:nth-child(#{$i}) {
+        background-color: funciones.colum-color($i);
+    }
+}

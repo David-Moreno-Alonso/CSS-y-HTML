@@ -1,0 +1,16 @@
+//Funciones
+@use "colores" as *;
+
+//Funcion de colores de la tabla
+@function colum-color($col-number) {
+    @if ($col-number%2==0) {
+        @return $color-col-pares;
+    } @else {
+        @return $color-col-impares;
+    }
+}
+
+//Funcion que devuelve la anchura de elemento
+@function anchura-col($i, $num-elementos){
+    @return calc(100/$num_elementos)*$i + "%";
+}
